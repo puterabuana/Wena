@@ -13,6 +13,7 @@
     <link rel="canonical" href="https://wena.my.id/">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://wena.my.id/">
+    <meta property="og:site_name" content="Wena Self Photo Studio">
     <meta property="og:title" content="Wena Self Photo Studio Tugumulyo">
     <meta
       property="og:description"
@@ -21,73 +22,160 @@
     <meta property="og:image" content="https://wena.my.id/assets/images/wena-friends-group-clean.webp">
     <meta property="og:locale" content="id_ID">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wena Self Photo Studio Tugumulyo">
+    <meta
+      name="twitter:description"
+      content="Studio self photo, photobox, dan aquabox di Tugumulyo, Musi Rawas. Booking Wena lewat link resmi."
+    >
+    <meta name="twitter:image" content="https://wena.my.id/assets/images/wena-friends-group-clean.webp">
     <link rel="icon" href="assets/images/wena-logo.webp" type="image/webp">
+    <link rel="preload" as="image" href="assets/images/wena-friends-group-clean.webp" fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;600;700&family=Jost:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     >
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;600;700&family=Jost:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+      >
+    </noscript>
     <link rel="stylesheet" href="styles.css">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Wena Self Photo Studio",
-        "url": "https://wena.my.id/",
-        "description": "Studio self photo di Tugumulyo, Musi Rawas dengan ruang privat, retake sepuasnya, latar estetik, photobox, dan aquabox.",
-        "image": [
-          "https://wena.my.id/assets/images/wena-friends-group-clean.webp",
-          "https://wena.my.id/assets/images/wena-aquabox-photobooth.webp",
-          "https://wena.my.id/assets/images/wena-self-photo-strip.webp"
-        ],
-        "telephone": "+6285369792229",
-        "priceRange": "Rp 35K-140K",
-        "areaServed": [
-          "Tugumulyo",
-          "Musi Rawas",
-          "Lubuk Linggau"
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "G1, Mataram, Kecamatan Tugumulyo",
-          "addressLocality": "Kabupaten Musi Rawas",
-          "addressRegion": "Sumatera Selatan",
-          "postalCode": "31662",
-          "addressCountry": "ID"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": -3.1820559,
-          "longitude": 102.9475669
-        },
-        "hasMap": "https://www.google.com/maps/place/Wena+Self+Photo+Studio/@-3.1822273,102.9453031,17z/data=!4m6!3m5!1s0x8f5e73d27426d523:0xd4e4910b44405ffa!8m2!3d-3.1820559!4d102.9475669!16s%2Fg%2F11svp9_5lz",
-        "openingHoursSpecification": [
+        "@graph": [
           {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday"
+            "@type": "LocalBusiness",
+            "@id": "https://wena.my.id/#localbusiness",
+            "name": "Wena Self Photo Studio",
+            "url": "https://wena.my.id/",
+            "logo": "https://wena.my.id/assets/images/wena-logo.webp",
+            "description": "Studio self photo di Tugumulyo, Musi Rawas dengan ruang privat, retake sepuasnya, latar estetik, photobox, dan aquabox.",
+            "image": [
+              "https://wena.my.id/assets/images/wena-friends-group-clean.webp",
+              "https://wena.my.id/assets/images/wena-aquabox-photobooth.webp",
+              "https://wena.my.id/assets/images/wena-self-photo-strip.webp"
             ],
-            "opens": "10:00",
-            "closes": "17:00"
+            "telephone": "+6285369792229",
+            "priceRange": "Rp 35K-140K",
+            "areaServed": [
+              "Tugumulyo",
+              "Musi Rawas",
+              "Lubuk Linggau"
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "G1, Mataram, Kecamatan Tugumulyo",
+              "addressLocality": "Kabupaten Musi Rawas",
+              "addressRegion": "Sumatera Selatan",
+              "postalCode": "31662",
+              "addressCountry": "ID"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": -3.1820559,
+              "longitude": 102.9475669
+            },
+            "hasMap": "https://www.google.com/maps/place/Wena+Self+Photo+Studio/@-3.1822273,102.9453031,17z/data=!4m6!3m5!1s0x8f5e73d27426d523:0xd4e4910b44405ffa!8m2!3d-3.1820559!4d102.9475669!16s%2Fg%2F11svp9_5lz",
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
+                "opens": "10:00",
+                "closes": "17:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Saturday",
+                  "Sunday"
+                ],
+                "opens": "10:00",
+                "closes": "18:00"
+              }
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+6285369792229",
+              "contactType": "booking",
+              "availableLanguage": [
+                "Indonesian"
+              ]
+            },
+            "makesOffer": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Self Photo Studio",
+                  "areaServed": "Tugumulyo, Musi Rawas"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Photobox",
+                  "areaServed": "Tugumulyo, Musi Rawas"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Aquabox",
+                  "areaServed": "Tugumulyo, Musi Rawas"
+                }
+              }
+            ],
+            "potentialAction": {
+              "@type": "ReserveAction",
+              "target": "https://linktr.ee/wenastudiofoto"
+            },
+            "sameAs": [
+              "https://www.instagram.com/wena.selfphoto/",
+              "https://linktr.ee/wenastudiofoto"
+            ]
           },
           {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Saturday",
-              "Sunday"
-            ],
-            "opens": "10:00",
-            "closes": "18:00"
+            "@type": "WebSite",
+            "@id": "https://wena.my.id/#website",
+            "url": "https://wena.my.id/",
+            "name": "Wena Self Photo Studio",
+            "inLanguage": "id-ID",
+            "publisher": {
+              "@id": "https://wena.my.id/#localbusiness"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://wena.my.id/#webpage",
+            "url": "https://wena.my.id/",
+            "name": "Wena Self Photo Studio Tugumulyo | Studio Foto, Photobox, Aquabox",
+            "description": "Wena Self Photo Studio di Tugumulyo, Musi Rawas. Foto sendiri pakai remote foto, retake sepuasnya, latar estetik, softcopy gratis, dan cetak foto.",
+            "isPartOf": {
+              "@id": "https://wena.my.id/#website"
+            },
+            "about": {
+              "@id": "https://wena.my.id/#localbusiness"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://wena.my.id/assets/images/wena-friends-group-clean.webp"
+            },
+            "inLanguage": "id-ID"
           }
-        ],
-        "sameAs": [
-          "https://www.instagram.com/wena.selfphoto/",
-          "https://linktr.ee/wenastudiofoto"
         ]
       }
     </script>
@@ -98,7 +186,7 @@
     <header class="site-header" data-header>
       <a class="brand-mark" href="#top" aria-label="Beranda Wena Self Photo Studio">
         <span class="brand-mark__logo">
-          <img src="assets/images/wena-logo-cropped.webp" alt="" width="620" height="460">
+          <img src="assets/images/wena-logo-cropped.webp" alt="" width="620" height="460" decoding="async">
         </span>
         <span class="brand-mark__text">Self Photo Studio</span>
       </a>
@@ -118,13 +206,13 @@
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero__media" aria-hidden="true">
           <figure class="hero-photo hero-photo--main">
-            <img src="assets/images/wena-friends-group-clean.webp" alt="" width="720" height="695">
+            <img src="assets/images/wena-friends-group-clean.webp" alt="" width="720" height="695" fetchpriority="high" decoding="async">
           </figure>
           <figure class="hero-photo hero-photo--aquabox">
-            <img src="assets/images/wena-aquabox-photobooth.webp" alt="" width="720" height="535">
+            <img src="assets/images/wena-aquabox-photobooth.webp" alt="" width="720" height="535" decoding="async">
           </figure>
           <figure class="hero-photo hero-photo--strip">
-            <img src="assets/images/wena-self-photo-strip.webp" alt="" width="720" height="960">
+            <img src="assets/images/wena-self-photo-strip.webp" alt="" width="720" height="960" decoding="async">
           </figure>
           <p class="hero__price"><span>Mulai dari</span><strong>Rp35K</strong></p>
           <p class="hero__photo-note">Foto sendiri, hasilnya tetap kamu.</p>
@@ -203,42 +291,42 @@
         </div>
         <div class="gallery-showcase">
           <figure class="gallery-feature">
-            <img src="assets/images/wena-self-photo-strip.webp" alt="Hasil cetak self photo strip dari Wena Studio" width="720" height="960" loading="lazy">
+            <img src="assets/images/wena-self-photo-strip.webp" alt="Hasil cetak self photo strip dari Wena Studio" width="720" height="960" loading="lazy" decoding="async">
             <figcaption>
               <span>Hasil Cetak</span>
               Foto strip yang bisa langsung dibawa pulang sebagai kenangan kecil dari sesi Wena.
             </figcaption>
           </figure>
           <figure class="gallery-story gallery-story--tall">
-            <img src="assets/images/wena-friends-group-clean.webp" alt="Foto grup teman di Wena Self Photo Studio" width="720" height="695" loading="lazy">
+            <img src="assets/images/wena-friends-group-clean.webp" alt="Foto grup teman di Wena Self Photo Studio" width="720" height="695" loading="lazy" decoding="async">
             <figcaption>
               <span>Bestie & Grup</span>
               Cocok buat sahabat, keluarga kecil, ulang tahun, atau momen rame-rame.
             </figcaption>
           </figure>
           <figure class="gallery-story">
-            <img src="assets/images/wena-aquabox-photobooth.webp" alt="Sesi aquabox di Wena Self Photo Studio" width="720" height="509" loading="lazy">
+            <img src="assets/images/wena-aquabox-photobooth.webp" alt="Sesi aquabox di Wena Self Photo Studio" width="720" height="509" loading="lazy" decoding="async">
             <figcaption>
               <span>Aquabox</span>
               Konsep aquarium photobooth yang paling beda buat konten dan kenangan.
             </figcaption>
           </figure>
           <figure class="gallery-story">
-            <img src="assets/images/wena-soft-pose-collection.webp" alt="Koleksi pose lembut di Wena Studio" width="720" height="900" loading="lazy">
+            <img src="assets/images/wena-soft-pose-collection.webp" alt="Koleksi pose lembut di Wena Studio" width="720" height="900" loading="lazy" decoding="async">
             <figcaption>
               <span>Pose Lembut</span>
               Referensi pose lembut untuk solo, gaya hijab, atau foto personal.
             </figcaption>
           </figure>
           <figure class="gallery-story gallery-story--photobox">
-            <img src="assets/images/wena-photobox-print.webp" alt="Hasil cetak photobox dari Wena Studio" width="720" height="810" loading="lazy">
+            <img src="assets/images/wena-photobox-print.webp" alt="Hasil cetak photobox dari Wena Studio" width="720" height="810" loading="lazy" decoding="async">
             <figcaption>
               <span>Photobox</span>
               Hasil cetak yang siap dibawa pulang dan dibagikan.
             </figcaption>
           </figure>
           <figure class="gallery-story">
-            <img src="assets/images/wena-couple-self-photo.webp" alt="Sesi foto couple di Wena Studio" width="720" height="1280" loading="lazy">
+            <img src="assets/images/wena-couple-self-photo.webp" alt="Sesi foto couple di Wena Studio" width="720" height="1280" loading="lazy" decoding="async">
             <figcaption>
               <span>Couple</span>
               Ruang privat bikin pose berdua jadi lebih santai.
@@ -465,7 +553,7 @@
       </section>
 
       <section class="final-cta" aria-labelledby="final-cta-title">
-        <img src="assets/images/wena-session-packages.webp" alt="Kolase pilihan sesi dan paket foto Wena Studio" width="720" height="900" loading="lazy">
+        <img src="assets/images/wena-session-packages.webp" alt="Kolase pilihan sesi dan paket foto Wena Studio" width="720" height="900" loading="lazy" decoding="async">
         <div>
           <p class="eyebrow">Siap masuk frame?</p>
           <h2 id="final-cta-title">Booking dulu, datang lebih tenang, pulang bawa foto kenangan.</h2>
