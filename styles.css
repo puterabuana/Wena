@@ -584,6 +584,7 @@ section[id] {
 .price-section,
 .booking-section,
 .location-section,
+.area-section,
 .faq-section {
   position: relative;
   overflow: hidden;
@@ -595,6 +596,7 @@ section[id] {
 .price-section::before,
 .booking-section::before,
 .location-section::before,
+.area-section::before,
 .faq-section::before {
   position: absolute;
   top: 34px;
@@ -612,7 +614,8 @@ section[id] {
 .price-section::before { content: "04"; color: rgba(47, 97, 51, 0.1); }
 .booking-section::before { content: "05"; color: rgba(47, 97, 51, 0.09); }
 .location-section::before { content: "06"; color: rgba(244, 231, 47, 0.16); }
-.faq-section::before { content: "07"; color: rgba(239, 111, 159, 0.1); }
+.area-section::before { content: "07"; color: rgba(47, 97, 51, 0.09); }
+.faq-section::before { content: "08"; color: rgba(239, 111, 159, 0.1); }
 
 .studio-section {
   width: 100%;
@@ -1240,19 +1243,54 @@ section[id] {
 
 .location-map {
   grid-column: 1 / -1;
-  min-height: 340px;
   overflow: hidden;
   border: 2px solid var(--color-ink);
   border-radius: 0;
-  background: var(--color-mist);
+  background:
+    linear-gradient(90deg, rgba(47, 97, 51, 0.08) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(47, 97, 51, 0.08) 1px, transparent 1px),
+    var(--color-brand-yellow);
+  background-size: 34px 34px;
 }
 
-.location-map iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-  min-height: 340px;
-  border: 0;
+.map-poster {
+  display: grid;
+  gap: 12px;
+  min-height: 300px;
+  align-content: end;
+  padding: 34px;
+  background:
+    linear-gradient(135deg, transparent 0 58%, rgba(239, 111, 159, 0.72) 58% 64%, transparent 64%),
+    radial-gradient(circle at 20% 22%, rgba(255, 253, 247, 0.85) 0 10px, transparent 11px),
+    radial-gradient(circle at 78% 30%, rgba(255, 253, 247, 0.85) 0 7px, transparent 8px);
+}
+
+.map-poster span {
+  width: fit-content;
+  border: 2px solid var(--color-brand-green);
+  background: #fffdf7;
+  color: var(--color-brand-green);
+  padding: 7px 11px;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.map-poster h3 {
+  max-width: 520px;
+  color: var(--color-brand-green);
+  font-size: 34px;
+}
+
+.map-poster p {
+  max-width: 620px;
+  margin: 0;
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+.map-poster .button {
+  width: fit-content;
 }
 
 .hours-list {
@@ -1282,6 +1320,61 @@ section[id] {
   min-height: 44px;
   align-items: center;
   margin-block: -10px;
+}
+
+.area-section {
+  width: 100%;
+  max-width: none;
+  padding: 104px var(--space-page);
+  border-top: 2px solid var(--color-ink);
+  border-bottom: 2px solid var(--color-brand-green);
+  background: #fffdf7;
+}
+
+.area-section > * {
+  width: min(var(--container), 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.area-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 38px;
+  align-items: start;
+}
+
+.area-grid h2 {
+  max-width: 660px;
+}
+
+.area-copy {
+  display: grid;
+  gap: 16px;
+  color: var(--color-muted);
+  font-size: 18px;
+}
+
+.area-copy p {
+  margin: 0;
+}
+
+.area-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.area-list li {
+  border: 2px solid var(--color-brand-green);
+  background: var(--color-brand-yellow);
+  color: var(--color-brand-green);
+  padding: 9px 12px;
+  font-size: 13px;
+  font-weight: 800;
 }
 
 .faq-list {
@@ -1455,6 +1548,7 @@ section[id] {
   .studio-layout,
   .booking-panel,
   .location-card,
+  .area-grid,
   .final-cta {
     grid-template-columns: 1fr;
   }
@@ -1464,6 +1558,7 @@ section[id] {
   .price-section,
   .booking-section,
   .location-section,
+  .area-section,
   .faq-section {
     padding-top: 84px;
     padding-bottom: 84px;
@@ -1475,6 +1570,7 @@ section[id] {
   .price-section::before,
   .booking-section::before,
   .location-section::before,
+  .area-section::before,
   .faq-section::before {
     top: 28px;
     font-size: 76px;
@@ -1694,6 +1790,7 @@ section[id] {
   .price-section,
   .booking-section,
   .location-section,
+  .area-section,
   .faq-section {
     padding: 72px var(--space-page);
   }
@@ -1704,6 +1801,7 @@ section[id] {
   .price-section::before,
   .booking-section::before,
   .location-section::before,
+  .area-section::before,
   .faq-section::before {
     display: none;
   }
@@ -1711,6 +1809,7 @@ section[id] {
   .feature-grid,
   .session-grid,
   .price-layout,
+  .area-grid,
   .gallery-grid {
     grid-template-columns: 1fr;
   }
@@ -1792,9 +1891,13 @@ section[id] {
     padding: 24px;
   }
 
-  .location-map,
-  .location-map iframe {
+  .map-poster {
     min-height: 280px;
+    padding: 24px;
+  }
+
+  .map-poster h3 {
+    font-size: 28px;
   }
 
   .final-cta {

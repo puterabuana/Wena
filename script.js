@@ -1,8 +1,17 @@
 const header = document.querySelector("[data-header]");
+let ticking = false;
 
 function updateHeader() {
-  header?.classList.toggle("is-scrolled", window.scrollY > 24);
+  if (!header) return;
+  header.classList.toggle("is-scrolled", window.scrollY > 24);
+  ticking = false;
 }
 
-updateHeader();
-window.addEventListener("scroll", updateHeader, { passive: true });
+function requestHeaderUpdate() {
+  if (ticking) return;
+  ticking = true;
+  requestAnimationFrame(updateHeader);
+}
+
+requestHeaderUpdate();
+window.addEventListener("scroll", requestHeaderUpdate, { passive: true });
