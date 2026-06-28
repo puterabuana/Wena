@@ -5,6 +5,19 @@
   "buildCommand": null,
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.wena.my.id"
+        }
+      ],
+      "destination": "https://wena.my.id/:path*",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",

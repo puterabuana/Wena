@@ -1506,6 +1506,68 @@ section[id] {
   color: var(--color-brand-yellow);
 }
 
+.not-found-page {
+  min-height: 100vh;
+  background: var(--color-brand-yellow);
+}
+
+.not-found {
+  min-height: 100vh;
+  padding: 136px var(--space-page) 56px;
+}
+
+.not-found__panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
+  gap: 42px;
+  align-items: center;
+  width: min(var(--container), 100%);
+  min-height: calc(100vh - 192px);
+  margin: 0 auto;
+}
+
+.not-found__copy {
+  max-width: 650px;
+}
+
+.not-found__copy h1 {
+  max-width: 650px;
+  color: var(--color-brand-green);
+  font-family: var(--font-body);
+  font-size: 76px;
+  font-weight: 800;
+  line-height: 0.94;
+}
+
+.not-found__copy p {
+  max-width: 560px;
+  color: #40372e;
+  font-size: 19px;
+}
+
+.not-found__photo {
+  margin: 0;
+  border: 8px solid #fffdf7;
+  background: #fffdf7;
+  box-shadow: 14px 14px 0 var(--color-brand-pink);
+  transform: rotate(2deg);
+}
+
+.not-found__photo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.not-found .button--ghost {
+  border-color: var(--color-ink);
+  color: var(--color-ink);
+}
+
+.not-found .button--ghost:hover {
+  background: rgba(255, 255, 255, 0.42);
+}
+
 @media (max-width: 900px) {
   .site-nav {
     display: none;
@@ -1549,6 +1611,7 @@ section[id] {
   .booking-panel,
   .location-card,
   .area-grid,
+  .not-found__panel,
   .final-cta {
     grid-template-columns: 1fr;
   }
@@ -1613,6 +1676,11 @@ section[id] {
   .final-cta img {
     width: min(480px, 92%);
     height: auto;
+    margin: 0 auto;
+  }
+
+  .not-found__photo {
+    width: min(520px, 92%);
     margin: 0 auto;
   }
 }
@@ -1712,6 +1780,23 @@ section[id] {
 
   h1 {
     font-size: 42px;
+  }
+
+  .not-found {
+    padding-top: 112px;
+  }
+
+  .not-found__panel {
+    gap: 30px;
+    min-height: auto;
+  }
+
+  .not-found__copy h1 {
+    font-size: 48px;
+  }
+
+  .not-found__copy p {
+    font-size: 16px;
   }
 
   .hero__brand {
